@@ -1,0 +1,126 @@
+<view class="container">
+  <!--先来个大标题-->
+  <view class="title">使用指南</view>
+  <!--接下来是内容-->
+  <view class="content">
+    <!--这是说明的第一部分-->
+    <view style="margin-bottom:40rpx">
+        <text style="margin-top:10rpx;margin-left:5rpx;font-size:40rpx;font-weight:bold">一、本小程序共分为三个部分：</text>
+      <!--每个页面都要加下划线-->
+        <text class="pages" bindtap="goTo1"> 1.季节饮食推荐页面</text>、
+        <text class="pages" bindtap="goTo2">2.体质测试页面</text>、
+        <text class="pages" bindtap="goTo3">3.我的详情页面</text>。
+        在此点击可直接进入对应页面。(注意：跳转后只能再次点击“使用说明”查看该指南，推荐阅读完该指南后再进行点击！)
+        <view style="margin-bottom:10rpx">“使用说明”的位置分别在<text class="pages" bindtap="goTo3">3.我的详情页面</text>中和食谱详情页面中（如图）</view>
+        <view class="intro23">
+        <image src="{{imgPath}}intro2.png" mode="widthFix"></image>
+        <image src="{{imgPath}}intro3.png" mode="widthFix"></image>
+        </view> 
+    </view>
+    
+    <!--这是说明的第二部分-->
+    <view style="margin-bottom:40rpx">
+      <view style="margin-top:10rpx;margin-left:5rpx;font-size:40rpx;font-weight:bold">二、从导航栏进入页面:</view>
+      <text space="emsp" style="margin-bottom:15rpx">  该小程序三个部分的页面都可以从底部的导航栏进入,图标对应上文提到的页面顺序。（导航栏如图）</text>
+      <view class="intro1_wrap">
+        <image src="{{imgPath}}intro1.png" mode="widthFix" style="width:98%;"  ></image>
+      </view>
+    </view>
+    
+    <!--这里是说明的第三部分-->
+    <view style="margin-bottom:40rpx">
+      <text style="margin-top:10rpx;margin-left:5rpx;font-size:40rpx;font-weight:bold">三、功能介绍：</text>
+      <!--这是第三部分的第一个part-->
+      <view style="margin-bottom:20rpx">
+        <text style="margin-bottom:10rpx"><text class="pages" bindtap="goTo1"> 1.季节饮食推荐页面</text>显示的信息有今日的日期、星期、农历日期和季节或者节气信息（如果当天是节气的话会显示节气，不是节气的话就会显示当今的季节）。轮播图中播放的关于季节饮食的注意事项。下方就是为您推荐的符合当前的季节的食谱（如图）。</text>
+        <view class="intro4_wrap">
+          <image src="{{imgPath}}intro4.png" mode="widthFix" style="width:98%;"></image>
+        </view>
+        
+      </view>
+
+      <!--这是第三部分的第二个part-->
+      <view style="margin-bottom:20rpx">
+        <view style="margin-bottom:10rpx"><text class="pages" bindtap="goTo2" >2.体质测试页面</text>是一个针对用户的测试页面，用户如果想要获得符合自身体质信息的饮食数据，必须要先填写该页面的测试题。其中必填问题必须要答完才可以提交，选填问题可以选择不答，但是如果答完了也会推荐对应方面的食谱。（如图）</view>
+        <view class="intro23">
+          <image src="{{imgPath}}intro5.png" mode="widthFix"></image>
+          <image src="{{imgPath}}intro6.png" mode="widthFix"></image>
+        </view>
+      </view>
+
+      <!--这是第三部分的第三个part-->
+      <view style="margin-bottom:20rpx">
+        <view style="margin-bottom:10rpx">
+          <text space="emsp" >  当测试题写完的时候可以点击该页面最下方的提交按钮，就可跳转到关于体质的推荐饮食页面。该页面的信息都是根据用户在测试中填入的答案进行计算获得的，在详情页面可以看到用户的BMI指数、体型、身体素质和适合用户的饮食类型。（如图）</text>
+        </view>
+        <view class="intro23">
+          <image src="{{imgPath}}intro7.png" mode="widthFix"></image>
+          <image src="{{imgPath}}intro8.png" mode="widthFix"></image>
+        </view>
+      </view>
+
+      <!--这是第三部分的第4个part-->
+      <view style="margin-bottom:20rpx">
+        <view style="margin-bottom:10rpx">
+          <text space="emsp">  因为推荐的食谱数目比较多所以在食谱上方会有一个横向的可滑动目录条，点击不同的目录即可得到不同的食谱列表（如图）。</text>
+        </view>    
+        <view class="intro23">
+          <image src="{{imgPath}}intro9.png" mode="widthFix"></image>
+          <image src="{{imgPath}}intro10.png" mode="widthFix"></image>
+        </view>
+      </view>
+
+      <!--这是第三部分的第5个part-->  
+      <view style="margin-bottom:20rpx">
+        <view style="margin-bottom:10rpx"><text class="pages" bindtap="goTo3">3.我的详情页面</text>是用于放置使用小程序的用户信息的页面，主要用于用户登录，和存储用户收藏的食谱的。在这里用户之前收藏的食谱都可以查看详情，但前提是必须登录才能查看。（如图）</view>
+        <view class="intro23">
+          <image src="{{imgPath}}intro11.png" mode="widthFix"></image>
+          <image src="{{imgPath}}intro12.png" mode="widthFix"></image>
+        </view>
+      </view>
+
+      <!--这是第三部分的第6个part--> 
+      <view style="margin-bottom:20rpx">
+        <view style="margin-bottom:10rpx">
+          <text space="emsp">  这里需要补充的是食谱收藏功能。当用户点击一个食谱列表中的食谱时，就可以跳转到食谱详情页面，在食谱详细信息下方有收藏按钮，按钮上的字显示的是当前食谱的收藏情况。状态为“未收藏”的时候点击，状态会变成“已收藏”，状态为“已收藏”的时候点击会变成“未收藏”。（如图）</text>
+        </view>
+        <view class="intro23">
+          <image src="{{imgPath}}intro13.png" mode="widthFix"></image>
+          <image src="{{imgPath}}intro14.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+
+    <!--这是说明的第四部分-->
+    <view style="margin-bottom:40rpx">
+      <view style="margin-top:10rpx;margin-left:5rpx;font-size:40rpx;font-weight:bold">四、关于该小程序的分享问题</view>
+      <!--这是第四部分的第1个part-->
+      <view style="margin-bottom:20rpx">
+        <view style="margin-bottom:10rpx">
+          <text space="emsp">  在用户想微信好友或者微信群里分享该小程序的时候需要注意一点：分享时小程序必须处于上文提到的三个主要页面中的其中一个！不能处在食谱详情页面或者测试结束的推荐食谱页面的时候分享小程序，因为开始的三个页面需要为其他的页面加载信息，如果不处于这些页面，分享出的小程序很可能出现页面乱码等功能问题，导致其他用户打开该分享链接的时候无法正常使用该小程序的功能。（分享步骤如图）</text>
+        </view>
+        <view class="intro23">
+          <image src="{{imgPath}}intro15.png" mode="widthFix"></image>
+          <image src="{{imgPath}}intro19.png" mode="widthFix"></image>
+        </view>
+      </view>
+
+      <!--这是第四部分的第2个part-->
+      <view style="margin-bottom:20rpx">
+        <view style="margin-bottom:10rpx">
+          <text space="emsp">  当您点开该小程序的链接，发现小程序的功能无法正常使用时，点击如图所示这里“重新进入小程序”，即可正常使用该小程序。（操作步骤如图）</text>
+        </view>
+        <view class="intro23">
+          <image src="{{imgPath}}intro15.png" mode="widthFix"></image>
+          <image src="{{imgPath}}intro18.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+
+    <!--最后的祝福语-->
+    <view style="font-size:25rpx;color:grey;text-align:center;margin:20rpx;">
+    最后祝您使用体验愉快！！！(｡･ω･｡)ﾉ♡
+    </view>
+  </view>
+
+</view>

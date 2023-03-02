@@ -1,0 +1,38 @@
+<!-- <view class="container">
+  <!--开头先是一个大标题-->
+  <!-- <view  class="wholetitle">
+    <text class="title">留言板</text>
+  </view> -->
+
+  <!--这里是留言内容-->
+  <!-- <view class="major">
+    <text style="font-size:40rpx">留言内容：</text>
+    <textarea maxlength="200" bindinput="bindContentInput" placeholder="输入您的意见或者建议（200字以内）" class="area"></textarea>
+  </view> -->
+
+  <!--这里是联系方式-->
+  <!-- <view class="connect">
+    <text style="font-size:40rpx">联系方式：</text>
+    <input maxlength="20" bindinput="bindNumInput" placeholder="（可选填）" style="padding:5rpx"></input>
+  </view> -->
+  <!--这里放一个匿名的单选框-->
+  <!-- <switch class="noName" bindchange="showChange">匿名</switch> -->
+  <!--最后这里是提交的按钮-->
+  <!-- <button class="button_wrap" bindtap="submit">提交留言</button>
+  
+  <view class="tips">感谢您宝贵的建议！</view> -->
+
+  <!--这是弹窗部分-->
+  <!--第一个弹窗是留言不能为空-->
+  <!-- <dialog title="留言情况" show="{{isEmpty}}" bindbuttontap="closeDialog" buttons="{{[{text: '确认'}]}}">
+    <view>留言不能为空！Σ(ﾟдﾟlll)</view>
+</dialog> -->
+  <!--第二个弹窗是留言成功-->
+  <!-- <!-- <dialog title="留言情况" show="{{isSuccess}}" bindbuttontap="closeDialog" buttons="{{[{text: '确认'}]}}">
+    <view>留言成功！(*˘︶˘*).｡.:*♡</view> 
+</dialog> -->
+<!--第三个弹窗是留言失败-->
+<!-- <dialog title="留言情况" show="{{isFail}}" bindbuttontap="closeDialog" buttons="{{[{text: '确认'}]}}">
+    <view>留言失败！ (๑ó﹏ò๑)</view>
+</dialog>
+</view>  -->

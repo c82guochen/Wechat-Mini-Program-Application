@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/test/test",
+    "pages/my/my",
+    "pages/introductions/introductions",
+    "pages/board/board",
+    "pages/details/details",
+    "pages/alter/alter",
+    "pages/single/single"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6495ED",
+    "navigationBarTitleText": "为了健康，吃什么？",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#0090ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/index.png",
+        "selectedIconPath": "icons/index2.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "icons/test.png",
+        "selectedIconPath": "icons/test2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my2.png"
+      }
+    ]
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

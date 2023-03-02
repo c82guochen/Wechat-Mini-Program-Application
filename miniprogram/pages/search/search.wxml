@@ -1,0 +1,18 @@
+<view class="container">
+  <!--先放搜索栏-->
+  <view class="searchItem">
+    <input maxlength="20" bindinput="bindTitleInput" placeholder="请输入关键字" class="searchInput"></input>
+    <van-button type="info" bindtap="searching">搜索</van-button>
+  </view>
+
+   <!--再放搜索内容-->
+    <view wx:for="{{outcome}}" wx:key="index" class="content" bindtap="showSingle"
+  data-title="{{item.title}}" data-content="{{item.content}}"
+  data-image="{{item.img}}">
+      <image src="{{item.img}}" class="picture"></image>
+      <view class="whole">
+        <view class="title_wrap">{{item.title}}</view>
+        <text class="content_wrap">{{item.content}}</text>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,215 @@
+<!--pages/test/test.wxml-->
+<image src="cloud://gc546184266.6763-gc546184266-1301880852/back-ground/test.jpg" mode="widthFix"class="titleImg"></image>
+<view class="title">
+  健  康
+        测  试
+</view>
+<view class="container">
+  <!--这是必填问题-->
+  <view>
+      <text class="title_wrap">必填问题:</text>
+    <view class="ques">
+      1、您的性别为？
+      <radio-group bindchange="bindSex">
+        <radio  class="yes" value="男性">男                     </radio>
+        <radio value="女性">女</radio>
+      </radio-group>
+      
+    </view>
+    <view class="ques">
+      <text>2、您的年龄是：</text> <input maxlength="100" placeholder="输入年龄" bindinput="bindAgeInput" type="number"></input>
+    </view>
+    <view class="ques">
+      3、您的身高为：<input maxlength="300" placeholder="输入身高（单位为cm）" bindinput="bindHeightInput" type="number"></input>
+    </view>
+    <view class="ques">
+      4、您的体重为：<input maxlength="1000" placeholder="输入体重（单位为斤）" bindinput="bindWeightInput" type="number"></input>
+    </view>
+    <view class="ques">
+        5、您有没有经常感到头部眩晕（除过蹲的时间过长的情况）？
+        <radio-group bindchange="bindHead5">
+          <radio  class="yes" value="有">有                     </radio> 
+          <radio value="没有">没有</radio>
+        </radio-group>  
+    </view>
+    <view class="ques">
+      6、您会不会在日常生活中经常用眼，感到眼睛干涩？
+      <radio-group bindchange="bindEyes6">
+        <radio  class="yes" value="会">会                     </radio>
+        <radio value="不会">不会</radio>
+      </radio-group>
+    </view>
+    <view class="ques">
+      7、您在晚上有经常失眠的情况吗？
+      <radio-group bindchange="bindSleep7">
+        <radio class="yes" value="有">有                     </radio>
+      <radio value="没有">没有</radio>
+      </radio-group>
+    </view>
+    <view class="ques">
+      8、您有没有经常上火（症状主要有咽喉干燥疼痛、眼睛赤红干涩、鼻腔热烘火辣、嘴唇干裂、食欲不振）？
+      <radio-group bindchange="bindFire8">
+        <radio class="yes" value="有">有                     </radio>
+        <radio value="没有">没有</radio>
+      </radio-group>
+    </view>
+    <view class="ques">
+      9、您有没有经常感到心情低落，抑郁难过？
+      <radio-group bindchange="bindDpress9">
+        <radio class="yes" value="有" >有                     </radio>
+      <radio value="没有">没有</radio>
+      </radio-group>
+    </view>
+    <view class="ques">
+      10、您会不会有时感到身体原因不明的疲乏无力？
+      <radio-group bindchange="bindTired10">
+        <radio class="yes" value="会">会                     </radio>
+      <radio value="不会">不会</radio>
+      </radio-group>
+    </view>
+    <view class="ques">
+      11、您是否感觉到自身免疫力低下，容易生病？
+      <radio-group bindchange="bindLowim11">
+        <radio class="yes" value="是">是                     </radio>
+        <radio value="否">否</radio>
+      </radio-group>
+    </view>
+    <view class="border_wrap"></view>
+  </view>
+  
+  <!--这里是选填问题-->
+  <view>
+    <text class="subtitle_wrap">选填问题:</text>（以下问题随意愿选填）
+    <!--这里是美容相关的问题-->
+    <view>
+      <view class="subtitle_wrap2">一、美容方面：</view>
+
+      <view class="ques">
+        1、您对自己的体重不满意，想要减肥？
+        <radio-group bindchange="bindFat1">
+          <radio class="yes" value="是">是                     </radio>
+          <radio value="否">否</radio>
+        </radio-group>
+      </view>
+
+      <view class="ques">
+        2、您对自己的皮肤质量是否满意？
+        <radio-group bindchange="bindSkin2">
+          <radio class="yes" value="是">是                     </radio>
+          <radio value="否">否</radio>
+          </radio-group>
+      </view>
+
+      <view class="ques">
+        3、您的脸上有没有出现痘痘？
+          <radio-group bindchange="bindFace3">
+            <radio class="yes" value="有">有                     </radio>
+            <radio value="没有">没有</radio>
+          </radio-group>
+      </view>
+
+      <view class="ques">
+        4、您的头发是否有发黄、早白、脱发的现象？
+          <radio-group bindchange="bindHair4">
+            <radio class="yes" value="是">是                     </radio>
+            <radio value="否">否</radio>
+          </radio-group>
+      </view>
+
+      <view class="ques">
+        5、您的牙齿和口腔环境如何？
+          <radio-group bindchange="bindMouth5">
+            <radio  class="yes" value="好">好                     </radio>
+            <radio value="不好">不好</radio>
+          </radio-group>
+      </view>
+    </view>
+    
+    <!--这里是脏腑养生的问题-->
+    <view>
+      <view class="subtitle_wrap2">二、脏腑养生：</view>
+      <view class="ques">
+        1、您是否有时候会出现胸闷气短、心悸乏力的情况？
+        <radio-group bindchange="bindHeart1">
+          <radio class="yes" value="是">是                     </radio>
+          <radio value="否">否</radio>
+        </radio-group>
+      </view>
+
+      <view class="ques">
+        2、您是否经常咳嗽，有时候出现胸闷气短、胸口疼痛的情况？
+        <radio-group bindchange="bindLung2">
+            <radio class="yes" value="是">是                     </radio>
+            <radio value="否">否</radio>
+        </radio-group>
+      </view>
+
+      <view class="ques">
+        3、您是否有长期鼻红、腹胀且胃口不好（即肝脏不太好）的情况？
+        <radio-group bindchange="bindLiver3">
+          <radio class="yes" value="是">是                     </radio>
+          <radio value="否">否</radio>
+        </radio-group>
+      </view>
+
+      <view class="ques">
+        4、您是否有时候感受到胃胀、胃痛或者反酸、烧心（即胃不好）的感觉？
+        <radio-group bindchange="bindStomach4">
+          <radio class="yes" value="是">是                     </radio>
+          <radio value="否">否</radio>
+        </radio-group>
+      </view>
+
+      <view class="ques">
+        5、您是否经常感受到精神不振、容易疲劳和食欲不振，并且大多数时候有上厕所不规律的现象？
+        <radio-group bindchange="bindKidney5">
+          <radio class="yes" value="是">是                     </radio>
+          <radio value="否">否</radio>
+        </radio-group>
+      </view>
+
+      <view class="ques">
+        6、您是否经常出现食欲不振并且有时候腹痛、腹泻甚至恶心呕吐的情况？
+        <radio-group bindchange="bindIntestine6">
+          <radio class="yes" value="是">是                     </radio>
+          <radio value="否">否</radio>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+
+  <!--附加问题：询问用户口味-->
+  <view class="border_wrap"></view>
+  <text class="subtitle_wrap3">附加问题:</text>（可多选）
+  <view style="margin-top:40rpx;margin-bottom:20rpx">最后请选择您喜欢的口味：</view>
+  <checkbox-group bindchange="favoredTaste" >
+    <checkbox value="酸" class="checkBox_wrap">酸   </checkbox>
+    <checkbox value="甜" class="checkBox_wrap">甜   </checkbox>
+    <checkbox value="苦" class="checkBox_wrap">苦  </checkbox>
+    <checkbox value="辣" class="checkBox_wrap">辣  </checkbox>
+    <checkbox value="咸" class="checkBox_wrap">咸  </checkbox>
+  </checkbox-group>
+
+  <!--这里是一条提示-->
+  <view class="final">请认真回答每个问题哦~
+  不然不会推荐适合您的食谱！</view>
+
+  <!--这里是第二条提示-->
+  <view class="final2">{{advice}}</view>
+
+  <!--这里是按钮-->
+  <view style="text-align:center">
+    <button bindtap="submit" class="button_wrap" hover-class="hover_wrap" size="mini">提交测试</button>                     
+  </view>
+</view>
+
+
+<!--这里放弹窗，代表年龄、身高、体重输入异常-->
+<dialog title="输入情况" show="{{diaShow}}" bindbuttontap="closeDialog" buttons="{{[{text: '确认'}]}}">
+    <view>
+      <text>请检查以下输入!(T ^ T)</text>
+        <view>年龄：10~150 岁</view>
+        <view>身高：50~240cm</view>
+        <view>体重：5 ~ 600 斤</view>
+    </view>
+</dialog>

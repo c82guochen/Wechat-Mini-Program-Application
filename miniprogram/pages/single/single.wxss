@@ -1,0 +1,54 @@
+.singleContainer{
+  margin:20rpx;
+  display:flex;
+  flex-direction: column;                         
+  align-items:center;                
+}
+
+.foodPicture{
+  width: 600rpx;
+  height: 600rpx;
+  margin: 20rpx;
+  align-items: center;
+}
+
+.foodTitle{
+  font-size: 55rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.foodContents{
+  font-size: 35rpx;
+  white-space:pre-wrap;
+  line-height: 55rpx;
+}
+
+button{
+  width: 250rpx;
+  height: 100rpx;
+  margin: 20rpx auto
+}
+
+.tips{
+  margin:10rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: grey;
+}
+
+
+.tips2{
+  margin:15rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: grey;
+}
+
+.tips3{
+  margin:15rpx;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40rpx;
+  color: 	#7B68EE;
+}

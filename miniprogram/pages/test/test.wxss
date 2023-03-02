@@ -1,0 +1,127 @@
+.container{
+  font-size: 45rpx;
+  margin: 10rpx;
+}
+
+.titleImg{
+width: 750rpx;
+  height: 400rpx;
+  margin-bottom:15rpx;
+}
+.title{
+  z-index: 2;
+  left: 130rpx;
+  top:-30rpx;
+  position: absolute;
+  font-size: 100rpx;
+  color: white;
+  font-style: oblique;
+  white-space: pre;
+}
+.ques{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+
+.yes{
+   white-space: pre;
+}
+
+.title_wrap{
+  font-size: 55rpx;
+  margin-top: 50rpx;
+  border-style: none none solid none;
+  border-bottom-color:#DB7093;
+}
+.subtitle_wrap{
+  font-size: 55rpx;
+  margin-top: 50rpx;
+  border-style: none none solid none;
+  border-bottom-color:#90EE90;
+}
+.subtitle_wrap3{
+  font-size: 55rpx;
+  margin-top: 50rpx;
+  border-style: none none solid none;
+  border-bottom-color	:#ADD8E6;
+}
+.subtitle_wrap2{
+  font-size: 50rpx;
+  margin-top: 50rpx
+}
+
+.border_wrap{
+  border-style: none none dotted none;
+  border-bottom-color:	#87CEEB;
+  margin-bottom: 40rpx;
+}
+
+input{
+  font-size: 40rpx;
+  font-style: oblique;
+}
+
+.button_wrap{
+  height:80rpx;
+  background-color:#87CEEB; 
+  color: white;
+}
+
+.hover_wrap{
+  background-color:	#1E90FF; 
+  color: 	#C0C0C0
+}
+
+radio .wx-radio-input  /*radio未选中时样式 */
+ {
+    width: 35rpx;
+    height: 35rpx;
+    border-radius: 50%;
+}
+
+radio .wx-radio-input.wx-radio-input-checked
+/* 选中后的 背景样式  */
+{
+    border-radius: 50%;
+    width: 35rpx;
+    height: 35rpx;
+    text-align: center;
+    color:#fff;
+    background-color: #2792ff;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before 
+/* 选中后的 对勾样式 */
+{
+  content: '';  /* 去除对号 */
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background-color: 	#FFFFFF;  
+}
+
+.final{
+  color: 	#B0C4DE;
+  font-size: 35rpx;
+  padding: 15rpx;
+  white-space: pre;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.final2{
+  color: 	red;
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.range{
+  font-size:35rpx;
+}
+
+.checkBox_wrap{
+  white-space: pre;
+
+}

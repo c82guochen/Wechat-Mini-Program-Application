@@ -1,0 +1,107 @@
+.picture {
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.body_condition{
+  margin-left: 10rpx;
+}
+.title {
+  z-index: 2;
+  color: white;
+  font-style: italic;
+  font-size: 80rpx;
+  position: absolute;
+  top: 130rpx;
+  left: 150rpx;
+  white-space: pre;
+}
+
+.text_wrap {
+  font-size: 45rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  white-space: pre;
+}
+
+.text_wrap2 {
+  font-size: 45rpx;
+  margin-bottom: 30rpx;
+  margin-top: 10rpx;
+  white-space: pre;
+  border-style: none none dashed none;
+  border-bottom-color: #db7093;
+}
+
+.bodyPosition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: pre;
+  margin:5rpx;
+}
+
+.navigators {
+  white-space: nowrap;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.navigator_wrap {
+  padding: 5rpx;
+  margin-left: 40rpx;
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+  display: inline-block;
+}
+
+.navigator_wrap.active {
+  border-bottom: 5rpx solid #df1a3b;
+}
+
+.Foodpicture {
+  width: 270rpx;
+  height: 270rpx;
+  float: left;
+  padding: 10rpx;
+  border-radius: 25%;
+}
+
+.whole {
+  height: 270rpx;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  padding: 10rpx;
+}
+.content{
+  white-space: pre-line;
+  padding: 20rpx;
+  border-bottom: 5rpx dashed#D4F2E7
+}
+
+.title_wrap{
+  font-size: 45rpx;
+  font-weight:bold;
+  margin:5rpx;
+}
+.content_wrap{
+  font-size: 40rpx;
+}
+
+.foodImg{
+  width:270rpx;
+  height: 270rpx;
+  float: left;
+  padding: 10rpx;
+  border-radius: 25%;
+}
+
+.final{
+  color:grey;
+  font-size:30rpx;
+  text-align:center;
+  margin:40rpx
+}

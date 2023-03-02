@@ -1,0 +1,50 @@
+/* pages/board/board.wxss */
+.container{
+  margin: 15rpx;
+}
+
+.wholetitle{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #D3D3D3;
+}
+
+.major{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #D3D3D3;
+}
+
+.title{
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.area{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  width: 98%;
+}
+
+.connect{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid #D3D3D3;
+}
+
+.button_wrap{
+  margin: 30rpx;
+  background-color:#87CEEB; 
+  color: white;
+}
+
+.tips{
+  color: grey;
+  padding: 20rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.noName{
+  padding-top:20rpx;
+}

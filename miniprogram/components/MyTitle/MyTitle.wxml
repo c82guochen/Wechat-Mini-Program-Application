@@ -1,0 +1,8 @@
+<view class="item_wrap">
+  <image src="{{imgSrc}}" class="img">
+  <view class="time_wrap">{{time}}    {{week}}</view>
+  <view class="lunar_wrap">{{lunarDate}}</view>
+  <view class="jieqi_wrap">{{jieqi}}</view>
+  </image>  
+</view>
+

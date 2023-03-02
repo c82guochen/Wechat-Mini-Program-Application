@@ -1,0 +1,37 @@
+/* component/MyTitle.wxss */
+.item_wrap{
+  width: 100%;
+}
+
+.img{
+  width: 750rpx;
+  height: 400rpx;
+  margin-bottom:15rpx;
+}
+
+.time_wrap{
+  position: absolute;
+  z-index: 2;
+  top:5rpx;
+  left: 30rpx;
+  font-size: 55rpx;
+  color:	#045858;
+}
+.lunar_wrap{
+  position: absolute;
+  z-index: 2;
+  top: 80rpx;
+  left: 30rpx;
+  font-size: 55rpx;
+  color: #045858;
+}
+
+.jieqi_wrap{
+  position: absolute;
+  z-index: 2;
+  top:250rpx;
+  right:5%;
+  font-size: 65rpx;
+  color: #045858;
+}
+

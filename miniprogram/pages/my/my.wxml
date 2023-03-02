@@ -1,0 +1,64 @@
+<!--登录页面-->
+<view class="myLogin">
+  <block wx:if="{{isLogin}}">
+    <image src="{{src}}"></image>
+    <text>{{nickName}}</text>
+  </block>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="getMyInfo">点击登录</button>
+</view>
+
+<!--用户获得四个按钮：我的收藏、意见反馈、菜谱搜索和使用说明-->
+<!--点击“我的收藏”按钮，显示收藏的食谱-->
+<view class="row_wrap">
+  <van-icon name="like-o" />
+  <button class="userButton" bindtap="getMyFavorites">
+    <text class='button_title'>我的收藏</text>
+  </button>
+  <van-icon wx:if="{{isShow}}" name="arrow-down" />
+  <van-icon wx:else name="arrow-up" />
+  
+</view>
+
+  <!--收藏夹-->
+<view wx:if="{{isShow}}">
+  <view class="content" wx:for="{{foodsList}}" wx:key="index" bindtap="goToDetail" data-title="{{item.title}}" data-content="{{item.content}}"
+  data-image="{{item.image}}">
+    <image src="{{item.image}}" class="picture"></image>
+    <view class="whole">
+        <view class="title_wrap">{{item.title}}</view>
+        <text class="content_wrap">{{item.content}}</text>
+      </view>
+  </view>
+</view>
+<view class='seperate'></view>
+
+<!--点击“意见反馈”按钮，跳转至反馈页面-->
+<view class="row_wrap">
+  <van-icon name="comment-o" />
+  <button class="userButton" open-type="feedback">
+    <text class='button_title'>意见反馈</text>
+  </button>
+  <van-icon name="arrow" />
+</view>
+<view class='seperate'></view>
+
+<!--点击“使用说明”按钮，跳转至使用指南页面-->
+<view class="row_wrap">
+  <van-icon name="description" />
+  <button class="userButton" bindtap="introduce">
+    <text class='button_title'>使用说明</text>
+  </button>
+  <van-icon name="arrow" />
+</view>
+<view class='seperate'></view>
+
+
+<!--点击“菜谱搜索”按钮，跳转至搜索页面-->
+<view class="row_wrap">
+  <van-icon name="search" />
+  <button class="userButton" bindtap="goToSearch">
+    <text class='button_title'>菜谱搜索</text>
+  </button>
+  <van-icon name="arrow" />
+</view>
+<view class='seperate'></view>

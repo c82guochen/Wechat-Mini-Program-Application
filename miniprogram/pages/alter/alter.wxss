@@ -1,0 +1,7 @@
+.textContents{
+  height: 700rpx;
+}
+
+.textTitle{
+  height: 100rpx;
+}

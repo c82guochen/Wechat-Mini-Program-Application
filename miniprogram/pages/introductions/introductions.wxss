@@ -1,0 +1,49 @@
+/* pages/introductions/introductions.wxss */
+.container{
+  margin:10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.pages{
+  margin:15rpx;
+  white-space: pre;
+  text-decoration: underline;
+  font-size: 35rpx;
+  color: 	#7B68EE;
+}
+
+.title{
+  font-size: 60rpx;
+  font-weight: bolder;
+  margin-bottom: 20rpx;
+}
+
+.content{
+  font-size: 35rpx;
+  line-height: 55rpx;
+  
+}
+
+.intro23{
+  display: flex;
+  flex-direction: row;
+  border:5rpx dotted #7B68EE
+}
+
+.intro23 image{
+   margin: 5rpx;
+}
+
+.intro1_wrap{
+  margin-top:10rpx;
+  text-align:center;
+  padding-top: 5rpx;
+  border:5rpx dotted #7B68EE
+}
+.intro4_wrap{
+  margin-top:10rpx;
+  text-align:center;
+  padding:5rpx;
+  border:5rpx dotted #7B68EE
+}

@@ -1,0 +1,32 @@
+<image src="cloud://gc546184266.6763-gc546184266-1301880852/back-ground/detail.jpg" class="picture"></image>
+<view class="body_condition">
+  <text class="title">饮 食 推 荐</text>
+  <view class="text_wrap">根据您的回答，
+   您的BMI指数为：{{BMI}}  
+   您的体型为：{{shape}}
+   您的身体素质：</view>
+  <view class="bodyPosition" style="border:5rpx dashed {{healthColor}}">
+    <view style="color:{{healthColor}};font-size:55rpx;font-style:bold">{{health}}</view>
+    <text style="color:{{healthColor}};font-size:40rpx">{{advice}}</text>
+  </view>
+
+  <text class="text_wrap2">
+这是适合您体质的饮食类型
+</text>
+  <view class="navigators">
+    <view bindtap="activeNav" data-index="{{index}}" class="navigator_wrap {{index===currentIndexNav?'active':''||(index===0&&isTab===false)?'active':''}}" wx:for="{{catalogs}}" wx:key="index"> {{item}} </view>
+  </view>
+
+  <!--这里应该有一个循环数组-->
+  <view wx:for="{{foodContents}}" wx:key="index" class="content" bindtap="showSingle"
+  data-title="{{item.title}}" data-content="{{item.content}}"
+  data-image="{{item.img}}">
+    <image src="{{item.img}}" class="foodImg"></image>
+    <view class="whole">
+      <view class="title_wrap">{{item.title}}</view>
+      <text class="content_wrap">{{item.content}}</text>
+    </view>
+  </view>
+  
+  <view class="final">下面没有啦~(╥ω╥`)</view>
+</view>

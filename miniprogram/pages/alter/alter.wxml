@@ -1,0 +1,15 @@
+<!-- <view>
+  <textarea  maxlength="10" bindinput="bindKindInput" placeholder="输入种类" class="textTitle"/>
+  <textarea  maxlength="10" bindinput="bindFlavorInput" placeholder="输入风味" class="textTitle"/>
+</view> 
+<view>
+  <textarea  maxlength="100" bindinput="bindImageInput" placeholder="输入图片地址" class="textTitle"/>
+</view>
+<view>
+  <textarea  maxlength="55" bindinput="bindTitleInput" placeholder="输入标题" class="textTitle"/>
+</view>
+<view>
+  <textarea  maxlength="6000" bindinput="bindContentInput" placeholder="输入内容" class="textContents"/>
+</view> 
+
+<button bindtap="submit">提交</button> -->
